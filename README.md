@@ -47,7 +47,7 @@
   Open Source
 </h2>
 <p align="center">
-  <sub>Copyright © 2021-present, Luan Batista.</sub>
+  <sub>Copyright © 2022-present, Luan Batista.</sub>
 </p>
 <p align="center">Willy WallPapers <a href="/LICENSE">is MIT licensed 💖</a></p>
 
