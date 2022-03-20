@@ -50,7 +50,5 @@
   <sub>Copyright © 2021-present, Luan Batista.</sub>
 </p>
 <p align="center">Willy WallPapers <a href="/LICENSE">is MIT licensed 💖</a></p>
-<p align="center">
-  <img src="assets\icons\facebook.ico" width="35" />
-</p>
+
 </samp>
