@@ -1,3 +1,4 @@
+import 'package:asuka/asuka.dart';
 import 'package:flutter/material.dart';
 import 'package:willy_wallpaper/screens/screens.dart';
 
@@ -18,8 +19,12 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Willy Wallpapers',
       debugShowCheckedModeBanner: false,
+      builder: Asuka.builder,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        colorScheme: ColorScheme.fromSwatch(
+          brightness: Brightness.dark,
+          accentColor: Colors.black,
+        ),
       ),
       home: const HomeScreen(),
     );

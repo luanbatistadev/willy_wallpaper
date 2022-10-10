@@ -47,7 +47,7 @@ class _FullScreenState extends State<FullScreen> {
                 placeholder: (context, url) => Container(
                   color: Colors.black,
                   child: const Center(
-                    child: CircularProgressIndicator(),
+                    child: CircularProgressIndicator(color: Colors.white),
                   ),
                 ),
                 errorWidget: (context, url, error) => const Icon(Icons.error),
