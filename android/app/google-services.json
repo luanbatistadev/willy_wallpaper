@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "277407447968",
+    "project_id": "willy-wallpapers",
+    "storage_bucket": "willy-wallpapers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277407447968:android:dcd5957be5810860e382c5",
+        "android_client_info": {
+          "package_name": "com.willy_wallpaper.rb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277407447968-aps1a9vcc5oi58dh1e27k2613o9avpnm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2kyQ0bXwiKjXg-8JriqAeWiNq7aNPyBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277407447968-aps1a9vcc5oi58dh1e27k2613o9avpnm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
