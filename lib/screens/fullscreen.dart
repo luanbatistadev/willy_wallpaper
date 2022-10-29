@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:wallpaper/wallpaper.dart';
+import 'package:willy_wallpaper/overlay/asuka_overlay_service_impl.dart';
 import 'package:willy_wallpaper/widgets/floating_button.dart';
 
 class FullScreen extends StatefulWidget {
@@ -15,7 +16,7 @@ class FullScreen extends StatefulWidget {
 
 class _FullScreenState extends State<FullScreen> {
   bool isActive = false;
-  bool downloading = false;
+  bool downloading = true;
 
   @override
   void initState() {
@@ -30,7 +31,8 @@ class _FullScreenState extends State<FullScreen> {
         isActive = !isActive;
       }),
       child: Scaffold(
-        floatingActionButton: const FloatingButton(),
+
+        floatingActionButton: downloading ? null : const FloatingButton(),
         body: Column(
           children: [
             Expanded(
@@ -68,12 +70,16 @@ class _FullScreenState extends State<FullScreen> {
         log("DataReceived: " + data);
       },
       onDone: () async {
-        setState(() {});
+        setState(() {
+          downloading = false;
+        });
         log("Task Done");
+
       },
       onError: (error) {
         setState(() {});
         log("Some Error");
+        AsukaOverlayServiceImpl().showErrorSnackBar('Went some error!');
       },
     );
   }
